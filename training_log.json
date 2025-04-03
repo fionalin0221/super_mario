@@ -1,0 +1,162 @@
+[
+    {
+        "episode": 1,
+        "return": 53.0
+    },
+    {
+        "episode": 2,
+        "return": -215.0
+    },
+    {
+        "episode": 3,
+        "return": 96.0
+    },
+    {
+        "episode": 4,
+        "return": -70.0
+    },
+    {
+        "episode": 5,
+        "return": -126.0
+    },
+    {
+        "episode": 6,
+        "return": 84.0
+    },
+    {
+        "episode": 7,
+        "return": 311.0
+    },
+    {
+        "episode": 8,
+        "return": 169.0
+    },
+    {
+        "episode": 9,
+        "return": 55.0
+    },
+    {
+        "episode": 10,
+        "return": 193.0
+    },
+    {
+        "episode": 11,
+        "return": 202.0
+    },
+    {
+        "episode": 12,
+        "return": 351.0
+    },
+    {
+        "episode": 13,
+        "return": 272.0
+    },
+    {
+        "episode": 14,
+        "return": -27.0
+    },
+    {
+        "episode": 15,
+        "return": 246.0
+    },
+    {
+        "episode": 16,
+        "return": 441.0
+    },
+    {
+        "episode": 17,
+        "return": 313.0
+    },
+    {
+        "episode": 18,
+        "return": 351.0
+    },
+    {
+        "episode": 19,
+        "return": 514.0
+    },
+    {
+        "episode": 20,
+        "return": 428.0
+    },
+    {
+        "episode": 21,
+        "return": 294.0
+    },
+    {
+        "episode": 22,
+        "return": 521.0
+    },
+    {
+        "episode": 23,
+        "return": 361.0
+    },
+    {
+        "episode": 24,
+        "return": 278.0
+    },
+    {
+        "episode": 25,
+        "return": 349.0
+    },
+    {
+        "episode": 26,
+        "return": 400.0
+    },
+    {
+        "episode": 27,
+        "return": 402.0
+    },
+    {
+        "episode": 28,
+        "return": 200.0
+    },
+    {
+        "episode": 29,
+        "return": 468.0
+    },
+    {
+        "episode": 30,
+        "return": 123.0
+    },
+    {
+        "episode": 31,
+        "return": 658.0
+    },
+    {
+        "episode": 32,
+        "return": 500.0
+    },
+    {
+        "episode": 33,
+        "return": 325.0
+    },
+    {
+        "episode": 34,
+        "return": 303.0
+    },
+    {
+        "episode": 35,
+        "return": 308.0
+    },
+    {
+        "episode": 36,
+        "return": 525.0
+    },
+    {
+        "episode": 37,
+        "return": 420.0
+    },
+    {
+        "episode": 38,
+        "return": 398.0
+    },
+    {
+        "episode": 39,
+        "return": 387.0
+    },
+    {
+        "episode": 40,
+        "return": 648.0
+    }
+]
