@@ -90,10 +90,10 @@ class Agent():
         self.replay_memory = deque([], maxlen = 50000)
 
         # model
-        self.policy_model = DQNSolver(input_shape = input_shape, n_actions = env.action_space.n).to(device)
-        self.target_model = DQNSolver(input_shape = input_shape, n_actions = env.action_space.n).to(device)
-        # self.policy_model = torch.jit.load("policy_model_latest.pth")
-        # self.target_model = torch.jit.load("policy_model_latest.pth")
+        # self.policy_model = DQNSolver(input_shape = input_shape, n_actions = env.action_space.n).to(device)
+        # self.target_model = DQNSolver(input_shape = input_shape, n_actions = env.action_space.n).to(device)
+        self.policy_model = torch.jit.load("policy_model_latest.pth")
+        self.target_model = torch.jit.load("policy_model_latest.pth")
         for param in self.target_model.parameters():
             param.requires_grad = False
         # self.target_model.load_state_dict(self.policy_model.state_dict())
@@ -210,8 +210,9 @@ class Agent():
         self.qvalues = []
     
     def save_model(self, episode=0, file_name="policy_model_best.pth"):
-        scripted_model = torch.jit.script(self.policy_model)
-        torch.jit.save(scripted_model, file_name)
+        torch.save(self.policy_model.state_dict(), file_name)
+        # scripted_model = torch.jit.script(self.policy_model)
+        # torch.jit.save(scripted_model, file_name)
 
 
 def train(env, episodes):
@@ -335,7 +336,7 @@ def save_plot(episode, losses, rewards, qvalues, returns):
 
     fig.suptitle(f"Episode {episode}")
     fig.tight_layout()
-    plt.savefig(f"plot/episode-{episode}.png")
+    plt.savefig(f"plot/training6/episode-{episode}.png")
     tqdm.write(f"Figure \"episode-{episode}.png\" saved.")
     for axis in axis:
         axis.cla()
