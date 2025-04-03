@@ -24,7 +24,8 @@ class Agent(object):
         self.frames = deque([], maxlen=4)
 
         # self.model = torch.jit.load('policy_model_best.pth').to(device)
-        self.model = torch.load('policy_model_best.pth', weights_only = False).to(device)
+        self.model = DQNSolver([1, 84, 84],self.action_space.n)
+        self.model.load_state_dict(torch.load("policy_model_best.pth", map_location=device))
         self.model.eval()  # Set to evaluation mode
         self.prev_obs = None
         # pass
