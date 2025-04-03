@@ -5,6 +5,9 @@ requests
 argparse
 opencv-python
 pygame
+matplotlib
+tensordict
+torchrl
 
 numpy==1.23.5
 gym==0.23.1
