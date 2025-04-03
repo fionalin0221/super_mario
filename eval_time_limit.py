@@ -82,7 +82,7 @@ for episode in tqdm(range(2), desc="Evaluating"):
         if done:
             break
         
-        env.render()
+        # env.render()
 
     end_time = time.time()
     total_reward += episode_reward
