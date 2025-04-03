@@ -158,5 +158,85 @@
     {
         "episode": 40,
         "return": 648.0
+    },
+    {
+        "episode": 41,
+        "return": 376.0
+    },
+    {
+        "episode": 42,
+        "return": 604.0
+    },
+    {
+        "episode": 43,
+        "return": 254.0
+    },
+    {
+        "episode": 44,
+        "return": 403.0
+    },
+    {
+        "episode": 45,
+        "return": 472.0
+    },
+    {
+        "episode": 46,
+        "return": 317.0
+    },
+    {
+        "episode": 47,
+        "return": 826.0
+    },
+    {
+        "episode": 48,
+        "return": 403.0
+    },
+    {
+        "episode": 49,
+        "return": 385.0
+    },
+    {
+        "episode": 50,
+        "return": 442.0
+    },
+    {
+        "episode": 51,
+        "return": 503.0
+    },
+    {
+        "episode": 52,
+        "return": 363.0
+    },
+    {
+        "episode": 53,
+        "return": 716.0
+    },
+    {
+        "episode": 54,
+        "return": 651.0
+    },
+    {
+        "episode": 55,
+        "return": 678.0
+    },
+    {
+        "episode": 56,
+        "return": 658.0
+    },
+    {
+        "episode": 57,
+        "return": 725.0
+    },
+    {
+        "episode": 58,
+        "return": 573.0
+    },
+    {
+        "episode": 59,
+        "return": 597.0
+    },
+    {
+        "episode": 60,
+        "return": 406.0
     }
 ]

@@ -23,7 +23,8 @@ class Agent(object):
         self.action_space = gym.spaces.Discrete(12)
         self.frames = deque([], maxlen=4)
 
-        self.model = torch.jit.load('policy_model_best.pth').to(device)
+        # self.model = torch.jit.load('policy_model_best.pth').to(device)
+        self.model = torch.load('policy_model_best.pth', weights_only = False).to(device)
         self.model.eval()  # Set to evaluation mode
         self.prev_obs = None
         # pass
