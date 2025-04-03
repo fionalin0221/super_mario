@@ -14,7 +14,8 @@ import cv2
 #     transforms.ToTensor(),                                     # Convert to tensor and normalize to [0, 1]
 # ])
 
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+# device = 'cuda' if torch.cuda.is_available() else 'cpu'
+device = 'cpu'
 
 class Agent(object):
     """Agent that acts randomly."""
