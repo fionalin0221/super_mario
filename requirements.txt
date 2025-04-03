@@ -4,6 +4,7 @@ tqdm
 requests
 argparse
 opencv-python
+pygame
 
 numpy==1.23.5
 gym==0.23.1
