@@ -23,9 +23,9 @@ class Agent(object):
         self.action_space = gym.spaces.Discrete(12)
         self.frames = deque([], maxlen=4)
 
-        # self.model = torch.jit.load('policy_model_best.pth').to(device)
-        self.model = DQNSolver([1, 84, 84],self.action_space.n)
-        self.model.load_state_dict(torch.load("policy_model_best.pth", map_location=device))
+        self.model = torch.jit.load('policy_model_latest.pth', map_location=device)
+        # self.model = DQNSolver([1, 84, 84],self.action_space.n)
+        # self.model.load_state_dict(torch.load("policy_model_latest.pth", map_location=device))
         self.model.eval()  # Set to evaluation mode
         self.prev_obs = None
         # pass
