@@ -41,7 +41,7 @@ def parse_arguments():
 
 # initializing agent
 # agent_path = sub_name + "_hw2_test.py"
-agent_path = "test_no_stack.py"
+agent_path = "student_agent.py"
 module_name = agent_path.replace('/', '.').replace('.py', '')
 spec = importlib.util.spec_from_file_location(module_name, agent_path)
 module = importlib.util.module_from_spec(spec)

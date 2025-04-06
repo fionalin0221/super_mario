@@ -6,7 +6,8 @@ import numpy as np
 # import cv2
 from torchvision import transforms
 
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+# device = 'cuda' if torch.cuda.is_available() else 'cpu'
+device = 'cpu'
 
 class DQNSolver(nn.Module):
     def __init__(self, input_shape, n_actions):
@@ -41,7 +42,7 @@ class Agent(object):
         self.action_space = gym.spaces.Discrete(12)
         self.frames = deque([], maxlen=4)
 
-        self.model = torch.jit.load('policy_model_latest_succ_6.pth').to(device)
+        self.model = torch.jit.load('policy_model_latest_succ_6.pth', map_location=device)
         self.model.eval()  # Set to evaluation mode
         self.prev_action = 0
         self.count = 0
